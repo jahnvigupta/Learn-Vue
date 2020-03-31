@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>
+Vue for loop
+</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+<div id="app">
+	<ul>
+		<li v-for="x in todos">
+			{{ x.text }}
+		</li>
+	</ul>
+</div>
+
+<script>
+var myobject = new Vue({
+	el: '#app',
+	data: {
+	todos: [
+		{ text : 'a'},
+		{ text : 'b'}
+	]
+	}
+})
+
+</script>
+</body>
+</html>
